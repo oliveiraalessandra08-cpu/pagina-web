@@ -48,7 +48,15 @@ text-align: center;
 
     function botaoClicado() {
     let texto = botao.querySelector("span");
-    texto.textContent++;
+       if (curtiu === false){
+        texto.textContent++;
+        curtiu = true;
+    } else {
+        texto.textContent--;
+        curtiu = false;
+    }
+}
+    
     }
     });
 </script>
