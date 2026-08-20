@@ -39,19 +39,21 @@ text-align: center;
     <h4>Depois de prontos</h3>
         <p>Depois de prontos, eles passam pelo controle de qualidade e são embalados em pacotes fechados para manter a crocância. Por fim, os salgadinhos são transportados em caminhões até supermercados, mercados e lojas, onde ficam disponíveis para a venda ao consumidor.</p>
     <button>❤️<span>0</span></button>
+    <button>👍<span>0</span></button>
+        
 </main>
 <script>
     const botao = document.querySelector("button");
+    botoes.forEach(function(botao) {
     botao.addEventListener("click", botaoClicado);
 
     function botaoClicado() {
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
-
+    let texto = botao.querySelector("span");
+    texto.textContent++;
+    }
+    });
 </script>
 </body>
-
 </html>
 
 
